@@ -30,8 +30,6 @@ body,html{
 .logo__img{
     width: 70px;
     height: 50px;
-    margin-top: -50px;
-    
 }
 
  a{
@@ -39,8 +37,8 @@ body,html{
 }
 
 ul{
-    padding: 20px;
-    margin: 20px;
+    padding: 0px;
+    margin: 0px;
 }
 
 li{
@@ -109,7 +107,6 @@ img{
 .logo{
     display: block;
     margin-right: 100px;
-    margin-top: 58px;
 }
 
 .contacts{
@@ -171,12 +168,12 @@ img{
 }
 
 .hero__title{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1.1;
     vertical-align: text-top;
     margin-bottom: 18px;
-    width: 248px;
+    width: 251px;
 }
 
 .hero__subtitle{
@@ -333,6 +330,7 @@ img{
 
 .news{
     margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 0px;
     display: flex;
     justify-content: space-between;
@@ -376,7 +374,7 @@ img{
     right: 0;
     bottom: 0;
     padding: 25px 30px;
-    min-height: 235px;
+    min-height: 160px;
 }
 
 .single-news__date{
