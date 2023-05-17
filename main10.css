@@ -13,6 +13,12 @@ body,html{
     height: 100%;
 }
 
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -22,8 +28,8 @@ body,html{
 }
 
 .main-page-wrapper{
-    background: url("./img/decor/lion-header.jpg")center top no-repeat, 
-    url("./img/decor/lion-small.jpg") right bottom -300px no-repeat;
+    background: url("./img/decor/lion-header.jpg")center top no-repeat,
+   url("./img/decor/lion-small.jpg") right bottom 264px no-repeat;
     background-size: contain;
 }
 
@@ -203,6 +209,14 @@ img{
     background: #202123;
 }
 
+.btn--color--grey{
+    background: #8d8d8d;
+}
+
+.btn--color--grey:hover{
+    background: #8d8d8d;
+}
+
 .btn--color--black:hover{
     background: #202123;
 }
@@ -212,13 +226,14 @@ img{
 }
 
 .sections{
-    margin-top: 250px;
+    margin-top: 180px;
     margin-bottom: 50px;
 }
 
 .section__title{
     font-size: 36px;
     font-weight: bold;
+    height: 120px;
 }
 
 .offers{
@@ -329,7 +344,7 @@ img{
 }
 
 .news{
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px;
     margin-left: 0px;
     display: flex;
@@ -365,7 +380,7 @@ img{
     width: 570px;
     height: 100%;
     object-fit: cover;
-    opacity: .4;
+    opacity: .9;
 }
 
 .single-news__text-content{
@@ -511,6 +526,7 @@ img{
 
 .footer-container{
     margin-top: auto;
+    
 }
 
 .footer-container__section{
@@ -538,7 +554,7 @@ img{
 
 .footer__col--align--right{
     align-items: flex-end;
-    margin-left: 150px;
+    margin-left: 324px;
 }
 
 .socials__item{
@@ -602,7 +618,9 @@ img{
     display:flex;
     flex-direction: column;
     padding-bottom: 25px;
-    background: #202123 url("./img/decor/lion-small.jpg") right  50% top no-repeat;
+    background: #202123 url("./img/decor/lion-small.jpg") left top -221px no-repeat;
+    width: 1340px;
+    margin: 0 auto;
 }
 
 .top-line__container{
@@ -672,7 +690,6 @@ img{
 }
 
 .service__img{
-    width: 30%;
     margin-right: 7%;
 }
 
@@ -716,25 +733,15 @@ img{
 }
 
 .partners__item{
-    margin-left: 46px;
-    filter: grayscale(100%);
+   margin-left: 46px;
+   filter: grayscale(100%);
 }
-
-.partners__item:nth-child(2){
-    margin-left: 95px;
-}
-
-.partners__item:nth-child(6){
-    margin-top: 20px;
-}
-
-
 
 /*.partners__item:nth-child(4n + 1){
     margin-left: 0;
 } */
 
-.partner__link{
+.partners__link{
     text-decoration: none;
     display: flex;
     width: 250px;
@@ -745,14 +752,266 @@ img{
 
 }
 
-.partner__link:hover{
-    filter: grayscale(0);
+.partners__link:hover{
+    filter: grayscale(0%);
 }
 
 .inner-footer__container{
-    padding: 45px 0;
+    padding: 0px 0;
 }
 
 .inner-footer{
     margin-top: auto;
+}
+
+/*rewiews age*/
+
+.reviews__item{
+    margin-bottom: 20px;
+}
+
+.reviews{
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.review__photo{
+    margin-right: 17px;
+}
+
+.review{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    background: #f4f5f5;
+    border-radius: 4px;
+}
+
+.review__header{
+    display:flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.review__user{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4d76a1;
+    margin-bottom: 11px;
+}
+
+.review__user:after{
+    content: url("./img/icons/vk-colored.png");
+}
+
+.avatar{
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.review__tags{
+    display: flex;
+    align-items: flex-start;
+}
+
+.tag{
+    font-size: 13px;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background:#c7e9d0;
+}
+
+.tag--bg--green{
+    background:#c7e9d0;
+}
+
+.review__title{
+    font-size: 30px;
+    color: #202123;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+.review__content-text{
+    margin-bottom: 50px;
+}
+
+.review-date{
+    font-size: 14px;
+    color: #202123;
+    font-weight: bold;
+}
+
+.separator{
+    background: #e5c288 url("./img/decor/phone-n-hand.png") right 20% bottom no-repeat;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #202123;
+}
+
+.service__content{
+    min-width: 50%;
+}
+
+.section__title{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.form__row{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.form__input{
+    flex: 1;
+    margin-right: 30px;
+    border-radius: 4px;
+    border: none;
+    background: #fff;
+    padding: 22px 30px;
+    font-size: 18px;
+    color: #202123;
+}
+
+.form_input::placeholde{
+    color: #666;
+}
+
+.form__input:last-child{
+    margin-right: 0px;
+}
+
+.form__input--textarea{
+   height: 232px;
+}
+
+.form__controls{
+   display: flex;
+   margin-bottom: 35px;
+}
+
+.form__controls-title{
+    width: 32%;
+    padding-left: 30px;
+    margin-right: 15px;
+ }
+
+.controls{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .controls__item{
+    margin-bottom: 10px;
+    margin-right: 10px;
+ }
+
+.controls__elem{
+    cursor: pointer;
+}
+
+.conrtols__checkbox:checked ~ .controls__tag{
+    background: #c7e9d0;
+}
+
+.controls__checkbox{
+    display: none;
+}
+
+.form__btns{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__btn{
+    margin-right: 20px;
+}
+
+.form__btn:last-child{
+    margin-right: 0px;
+}
+
+/*Welcome page*/
+
+.welcome{
+    display: flex;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url(./img/decor/welcome-lion.jpg) center bottom/cover no-repeat;
+}
+
+.central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: bounce 1.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.central__logo{
+    margin-bottom: 65px;
+}
+
+@keyframes bounce{
+
+    0%{
+        transform: translateY(0);
+    }
+
+    20%{
+        animation-timing-function: cubic-bezier(.17,.96,.56.1) ;
+        transform: translateY(-30px);
+    }
+
+    35%{
+        transform: translateY(0);
+    }
+
+    55%{
+        transform: translateY(-15px);
+    }
+
+    65%{
+        transform: translateY(0px);
+    }
+
+    70%{
+        transform: translateY(-4px);
+    }
+
+    80%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+.central__video{
+    opacity: 0;
+    animation: rotateIn 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotateIn{
+
 }
